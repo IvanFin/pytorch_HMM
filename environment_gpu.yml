@@ -1,0 +1,24 @@
+name: hmm-gpu
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.6
+  - numpy
+  - scipy
+  - scikit-learn
+  - pandas
+  - tqdm
+  - pytorch::cudatoolkit=10.1
+  - pytorch::pytorch
+  - matplotlib
+  - seaborn
+  - ipython
+  - jupyter
+  - jupyterlab
+  - pytest
+  - pip
+  - pip:
+    - git+https://github.com/harvardnlp/genbmm -qU

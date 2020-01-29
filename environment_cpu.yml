@@ -1,0 +1,25 @@
+name: hmm-cpu
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.6
+  - numpy
+  - scipy
+  - scikit-learn
+  - pandas
+  - tqdm
+  - pytorch::cpuonly
+  - pytorch::pytorch
+  - matplotlib
+  - seaborn
+  - ipython
+  - jupyter
+  - jupyterlab
+  - pytest
+# genbmm currently supports only CUDA, no CPU
+#  - pip
+#  - pip:
+#    - git+https://github.com/harvardnlp/genbmm -qU
